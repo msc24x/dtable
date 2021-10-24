@@ -43,8 +43,8 @@ except Exception:
 if opened:
 	table = {"x" : [], "y" : []}
 	for line in file:
-		table["x"].append([int(x) for x in line.split()][0])
-		table["y"].append([int(x) for x in line.split()][1])
+		table["x"].append([float(x) for x in line.split()][0])
+		table["y"].append([float(x) for x in line.split()][1])
 	createDTable(table)
 	
 	
